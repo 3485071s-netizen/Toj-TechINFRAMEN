@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/compras.css">
+    <link rel="icon" href="img/logo-proyectofinal2.0.svg">
+    <title>Compras</title>
+</head>
+<body>
+
+    <header>
+        <!-- Barra superior -->
+        <div class="hearder_superio">
+            <div class="logo">
+                <a href="../Inicio/index.html">
+                    <img src="img/logo-proyectofinal2.0.svg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="search">
+                <input type="search" placeholder="¿Qué deseas buscar?">
+            </div>
+
+            <div class="Inicio_Seccion">
+                <div class="social-media">
+                    <a href="../Sesion/Sesion.html">
+                        <img src="img/acceso.png" alt="Icono">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú de navegación -->
+        <div class="contarner_menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../Inicio/index.html" id="selected">Inicio</a></li>
+                        <li>
+                            <a href="#">Catálogo</a>
+                            <ul>
+                                <li><a href="../Catalogo/">Componentes</a></li>
+                                <li><a href="#">Dispositivos</a></li>
+                                <li><a href="#">Información</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Desktops</a></li>
+                                <li><a href="#">Laptops</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+
+
+                        <li class="cart-icon">
+                            <div class="Inicio_Seccion">
+                                <div class="social">
+                                    <a href="../Compras/compras.html"><img src="img/carrito-de-compras.png" alt="Icono"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="page-content">
+        <div class="cart-container">
+            <div class="cart-header">
+                <div class="cart-title">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.24 17 6.5 17h12v-2H6.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5L17 14h-2.14l-1-2H7.1L6 9.63l-1.35-2.63L3.62 4H1V2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    <h3>Mi carrito</h3>
+                    <span>0 productos</span>
+                </div>
+                <button class="close-btn">&times;</button>
+            </div>
+    
+            <div class="cart-body">
+                <div class="empty-cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                         <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.24 17 6.5 17h12v-2H6.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5L17 14h-2.14l-1-2H7.1L6 9.63l-1.35-2.63L3.62 4H1V2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                </div>
+                <p class="empty-cart-text">Aún no hay productos en tu carretilla</p>
+            </div>
+    
+            <footer class="cart-footer">
+                <div class="summary">
+                    <div class="summary-row">
+                        <span>Total de compra:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Costo de envío <span class="info-icon">i</span>:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Ahorro Total:</span>
+                        <span>-$0.00</span>
+                    </div>
+                    <div class="summary-row subtotal">
+                        <strong>Subtotal a pagar:</strong>
+                        <strong>$0.00</strong>
+                    </div>
+                </div>
+                <div class="checkout-container">
+                    <button class="checkout-button">Proceder a pago</button>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="conteiner">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Información de Contacto</h4>
+                    <ul>
+                        <li><a href="#">Contacto : 0000-0000</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-media">
+                        <a href=""><img src="img/logotipo-de-instagram (1).png" alt="Instagram"></a>
+                        <a href=""><img src="img/tik-tok.png" alt="Tik Tok"></a>
+                        <a href=""><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href=""><img src="img/logotipos.png" alt="Twitter"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Políticas y Términos</h4>
+                    <ul>
+                        <li><a href="#">Aviso de Privacidad</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <ul>
+                        <li><a href="#">San Salvador, El Salvador</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
