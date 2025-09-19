@@ -1,0 +1,80 @@
+
+.desktops-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.desktop-item {
+  width: 280px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.desktop-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.desktop-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+}
+
+.desktop-item:hover img {
+  transform: scale(1.1);
+}
+
+.desktop-item h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.desktop-item p {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.desktop-item button {
+  background: #ff4b5c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.desktop-item button:hover {
+  background: #ff1f3d;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .desktops-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktops-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desktop-item {
+    width: 90%;
+  }
+}
