@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOJ TECH - Catálogo de Tecnología</title>
+
+  <meta name="description" content="TOJ TECH: Laptops, componentes, accesorios y artículos informáticos al mejor precio.">
+  <meta name="keywords" content="laptops, tecnología, componentes, computadoras, accesorios, informática">
+  <meta name="author" content="TOJ TECH">
+
+  <link rel="stylesheet" href="css/catalogo.css">
+  <link rel="icon" href="img/logo-proyectofinal2.0.svg">
+</head>
+<body>
+
+  <header>
+    <div class="hearder_superio">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo-proyectofinal2.0.svg" alt="Logo">
+        </a>
+      </div>
+
+      <div class="search">
+        <input type="search" placeholder="¿Qué deseas buscar?">
+      </div>
+
+      <div class="Inicio_Seccion">
+        <div class="social-media">
+          <a href="Sesion.html">
+            <img src="img/acceso.png" alt="Icono">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contarner_menu">
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="index.html" id="selected">Inicio</a></li>
+            <li>
+              <a href="catalogo.html">Catálogo</a>
+              <ul>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="">Dispositivos</a></li>
+                <li><a href="Infor.html">Información</a></li>
+                <li><a href="acessorios.html">Accesorios</a></li>
+                <li><a href="deskstops.html">Desktops</a></li>
+                <li><a href="Laptops.html">Laptops</a></li>
+              </ul>
+            </li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li class="cart-icon">
+              <div class="Inicio_Seccion">
+                <div class="social">
+                  <a href="compras.html">
+                    <img src="img/carrito-de-compras.png" alt="Icono">
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-texto">
+      <h2>Las mejores laptops y artículos informáticos al mejor precio</h2>
+      <p>Somos los mejores en material informático.</p>
+      <button>Comprar nuevo</button>
+    </div>
+    <div class="hero-imagen">
+      <img src="img/placa base atx.jpg" alt="Placa base informática" loading="lazy">
+    </div>
+  </section>
+
+  <!-- BUSCADOR -->
+  <section class="buscador">
+    <h2>Busca tu producto</h2>
+    <input type="text" id="buscarInput" placeholder="Buscar producto">
+    <select id="filtroCategoria">
+      <option value="">Todas las categorías</option>
+      <option value="laptop">Laptops</option>
+      <option value="desktop">Desktops</option>
+      <option value="componente">Componentes</option>
+      <option value="accesorio">Accesorios</option>
+    </select>
+    <input type="number" id="filtroPrecio" placeholder="Precio máximo">
+  </section>
+
+  <!-- CATEGORÍAS / PRODUCTOS -->
+  <section class="categorias" id="productos">
+    <h2>Catálogo</h2>
+
+    <!-- COMPONENTES -->
+    <div id="componentes" class="sub-categoria">
+      <h3>Componentes</h3>
+      <div class="grid">
+        <div class="item" data-categoria="componente" data-precio="300">
+          <img src="img/memoria ran 16 gb.png" alt="Memoria RAM" loading="lazy">
+          <p>Memoria RAM 16GB - $300</p>
+          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        </div>
+        <div class="item" data-categoria="componente" data-precio="450">
+          <img src="img/disco ssd 1 tb.jpg" alt="Disco SSD" loading="lazy">
+          <p>Disco SSD 1TB - $450</p>
+          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        </div>
+        <div class="item" data-categoria="componente" data-precio="250">
+          <img src="img/placa base atx.jpg" alt="Placa Base ATX" loading="lazy">
+          <p>Placa Base ATX - $250</p>
+          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        </div>
+        <!-- Resto de componentes omitidos por brevedad -->
+      </div>
+    </div>
+
+    <!-- DISPOSITIVOS -->
+    <div id="dispositivos" class="sub-categoria">
+      <h3>Dispositivos</h3>
+      <div class="grid">
+        <div class="item" data-categoria="dispositivo" data-precio="600">
+          <img src="img/WhatsApp Image 2025-09-11 at 9.02.06 PM (1).jpeg" alt="Tablet" loading="lazy">
+          <p>Tablet Pro - $600</p>
+          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        </div>
+        <!-- Resto de dispositivos omitidos por brevedad -->
+      </div>
+    </div>
+
+    <!-- ACCESORIOS -->
+    <div id="accesorios" class="sub-categoria">
+      <h3>Accesorios</h3>
+      <div class="grid">
+        <div class="item" data-categoria="accesorio" data-precio="50">
+          <img src="img/WhatsApp Image 2025-09-11 at 9.02.06 PM.jpeg" alt="Mouse óptico" loading="lazy">
+          <p>Mouse óptico - $50</p>
+          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        </div>
+        <!-- Resto de accesorios omitidos por brevedad -->
+      </div>
+    </div>
+
+    <!-- DESKTOPS -->
+    <div id="desktops" class="sub-categoria">
+      <h3>Desktops</h3>
+      <div class="grid">
+        <div class="item" data-categoria="desktop" data-precio="1200">
+          <img src="img/deskpots gamer.jpg" alt="Desktop Gamer" loading="lazy">
+          <p>Desktop Gamer - $1200</p>
+          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        </div>
+        <!-- Resto de desktops omitidos por brevedad -->
+      </div>
+    </div>
+
+    <!-- LAPTOPS -->
+    <div id="laptops" class="sub-categoria">
+      <h3>Laptops</h3>
+      <div class="grid">
+        <div class="item" data-categoria="laptop" data-precio="750">
+          <img src="img/laptop office.webp" alt="Laptop básica" loading="lazy">
+          <p>Laptop básica - $750</p>
+          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        </div>
+        <!-- Resto de laptops omitidos por brevedad -->
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="conteiner">
+      <div class="row">
+
+        <div class="footer-col">
+          <h4>Información de Contacto</h4>
+          <ul>
+            <li><a href="#">Contacto: 0000-0000</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Redes Sociales</h4>
+          <div class="social-media">
+            <a href="#"><img src="img/logotipo-de-instagram (1).png" alt="Instagram"></a>
+            <a href="#"><img src="img/tik-tok.png" alt="Tik Tok"></a>
+            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/logotipos.png" alt="Facebook"></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Políticas y Términos</h4>
+          <ul>
+            <li><a href="Termino.html">Aviso de Privacidad</a></li>
+            <li><a href="Termino.html">Términos de Uso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ubicación</h4>
+          <ul>
+            <li><a href="#">San Salvador, El Salvador</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/catalogo+.js"></script>
+</body>
+</html>
+
