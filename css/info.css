@@ -82,7 +82,6 @@ nav > ul > li > a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    height: 100%;
     padding: 14px;
     color: black;
     text-transform: uppercase;
@@ -310,6 +309,7 @@ nav ul li ul li a:hover {
         
     }
 }
+
 .titleMaterial1,
 .servado {
     text-align: center;
