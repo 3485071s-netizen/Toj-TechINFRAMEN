@@ -3,17 +3,23 @@
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 15px;
-    max-width: 1200px;
     margin: 40px auto;
+    max-width: 1200px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    flex-wrap: wrap; /* 🔑 permite que el contenido baje en pantallas pequeñas */
+    gap: 20px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 250px; /* 🔑 evita que el texto se haga demasiado angosto */
 }
 
 .hero-text h1 {
-    line-height: 1.8; 
+    line-height: 1.4;
     font-size: 28px;
     color: #333;
     margin-bottom: 10px;
@@ -25,17 +31,56 @@
 }
 
 .btn-shop {
-    line-height: 2; 
+    line-height: 2;
     background-color: #a52a2a;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .btn-shop:hover {
     background-color: #8b1e1e;
+}
+
+.hero img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* --- MEDIA QUERIES PARA RESPONSIVE --- */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column; /* 🔑 apila texto e imagen */
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 20px;
+    }
+
+    .btn-shop {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero img {
+        max-width: 280px;
+    }
 }
 
 /* --- CATEGORÍAS COMO CARTAS --- */

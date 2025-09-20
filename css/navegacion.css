@@ -1,3 +1,4 @@
+/* --- RESETEO Y ESTILOS GENERALES --- */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@ body {
     margin-left: auto; 
 }
 
-.social-media img{
+.social-media img {
     width: 40px;
 }
 
@@ -95,7 +96,7 @@ nav > ul > li > a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* --- SUBMENÚ --- */
+/* --- SUBMENÚ DESKTOP --- */
 nav ul li ul {
     width: 200px;
     display: flex;
@@ -151,83 +152,6 @@ nav ul li ul li a:hover {
 /* --- RESPONSIVE --- */
 @media screen and (max-width: 720px) {
 
-       /* --- MENÚ PRINCIPAL --- */
-    nav > ul {
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        width: 250px;
-        height: 100vh;
-        background-color: #fff;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-        overflow-y: auto;
-        padding-top: 100px;
-        transition: left 0.3s ease;
-        z-index: 999;
-    }
-
-    nav > ul.open {
-        left: 0;
-    }
-
-    nav > ul > li {
-        border-bottom: 1px solid #ccc;
-        position: relative;
-    }
-
-    nav > ul > li > a {
-        padding: 15px;
-        display: block;
-        text-align: left;
-    }
-
-    /* --- SUBMENÚ COMO PANEL LATERAL --- */
-    nav ul li ul {
-        position: fixed;
-        top: 0;
-        left: 250px; /* aparece a la derecha del menú principal */
-        width: 200px;
-        height: 100vh;
-        background-color: #f8f8f8;
-        border-left: 3px solid #a52a2a;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-        padding-top: 100px;
-        transform: translateX(100%);
-        opacity: 0;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-        display: flex;
-        flex-direction: column;
-        z-index: 1000;
-    }
-
-    nav ul li.show-submenu ul {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    nav ul li ul li a {
-        padding: 12px 20px;
-        display: block;
-        color: #333;
-        font-size: 14px;
-        transition: background 0.3s ease;
-    }
-
-    nav ul li ul li a:hover {
-        background-color: #000000;
-    }
-
-    /* Flecha indicadora para submenús */
-    .arrow {
-        float: right;
-        transition: transform 0.3s ease;
-    }
-
-    li.show-submenu .arrow {
-        transform: rotate(90deg);
-    }
-
     body {
         padding-top: 120px;
     }
@@ -248,7 +172,7 @@ nav ul li ul li a:hover {
         margin-top: 0;
     }
 
-    /* --- MENÚ DESPLEGABLE LATERAL --- */
+    /* --- MENÚ LATERAL --- */
     nav > ul {
         flex-direction: column;
         position: fixed;
@@ -261,7 +185,7 @@ nav ul li ul li a:hover {
         overflow-y: auto;
         padding-top: 100px;
         transition: left 0.3s ease;
-        z-index: 999;
+        z-index: 1;
     }
 
     nav > ul.open {
@@ -278,7 +202,7 @@ nav ul li ul li a:hover {
         text-align: left;
     }
 
-    /* --- SUBMENÚ ESTILO BONITO --- */
+    /* --- SUBMENÚ DESPLEGABLE EN MÓVIL --- */
     nav ul li ul {
         background-color: #f8f8f8;
         border-radius: 5px;
@@ -304,9 +228,7 @@ nav ul li ul li a:hover {
         to {
             opacity: 1;
             transform: translateY(0);
-            
         }
-        
     }
 }
 
