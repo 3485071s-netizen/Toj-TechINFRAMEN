@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toj Tech - Ofertas</title>
+  <title>Sobre Nosotros</title>
   <link rel="stylesheet" href="css/navegacion.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/SobreNosotros.css">
   <link rel="icon" href="img/logo-proyectofinal2.0.svg">
 </head>
 <body>
-
-    <header>
+        <header>
         <!-- Barra superior -->
         <div class="hearder_superio">
             <div class="logo">
@@ -32,7 +31,7 @@
             </div>
 
             <!-- Icono hamburguesa (solo visible en móvil) -->
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="menu-toggle">
                 <img src="img/barra-de-menus.png" alt="Menú" class="hamburger-icon">
             </div>
         </div>
@@ -47,7 +46,6 @@
                             <a href="catalogo.html">Catálogo</a>
                             <ul>
                                 <li><a href="componentes.html">Componentes</a></li>
-                                <li><a href="#">Dispositivos</a></li>
                                 <li><a href="Infor.html">Información</a></li>
                                 <li><a href="acessorios.html">Accesorios</a></li>
                                 <li><a href="deskstops.html">Desktops</a></li>
@@ -55,7 +53,7 @@
                             </ul>
                         </li>
                         <li><a href="ofertas.html">Ofertas</a></li>
-                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
 
                         <li class="cart-icon">
                             <div class="Inicio_Seccion">
@@ -70,85 +68,40 @@
         </div>
     </header>
 
-  <section class="ofertas">
-    <h2>🔥 Ofertas Especiales</h2>
-    <div class="contenedor-tarjetas">
+    
+  <section>
+    <h2>¿Quiénes somos?</h2>
+    <p>En <strong>Toj-Tech</strong>, somos un equipo apasionado por la tecnología, la innovación y el servicio al cliente. Nos mueve el deseo de transformar la manera en que las personas interactúan con el mundo digital, ofreciendo soluciones accesibles, confiables y modernas. Nuestra misión es acercar la tecnología a cada persona, sin importar su nivel técnico, edad o presupuesto, y hacerlo de forma sencilla, segura y eficiente.Creemos que la tecnología no debe ser un lujo, sino una herramienta cotidiana que empodere a las personas en su vida personal, profesional y educativa.</p>
 
-      <div class="tarjeta-oferta">
-        <img src="img/1.webp" alt="Laptop Gamer">
-        <h3>Laptop Gamer Ryzen 7</h3>
-        <p class="precio-original">$1200.00</p>
-        <p class="precio-oferta">$999.99</p>
-        <p class="descripcion">16GB RAM, RTX 3060, SSD 512GB</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
+    <h2>Nuestra historia</h2>
+    <p>Toj-Tech nació de una necesidad real: la falta de opciones tecnológicas accesibles en el mercado local. Fundada por entusiastas del mundo digital, nuestra empresa comenzó como un pequeño proyecto con grandes sueños. Desde nuestros primeros pasos, nos propusimos construir una tienda en línea que no solo ofreciera buenos precios, sino también una experiencia de compra confiable, transparente y humana.A lo largo del tiempo, hemos crecido gracias a la confianza de nuestros clientes, expandiendo nuestro catálogo, mejorando nuestros procesos logísticos y fortaleciendo nuestras alianzas con marcas reconocidas. Hoy, seguimos fieles a nuestra visión original: democratizar el acceso a la tecnología.</p>
 
-      <div class="tarjeta-oferta">
-        <img src="img/2.jpg" alt="Mouse Logitech">
-        <h3>Mouse Inalámbrico Logitech</h3>
-        <p class="precio-original">$35.00</p>
-        <p class="precio-oferta">$24.99</p>
-        <p class="descripcion">Ergonómico, batería de larga duración</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
+    <h2>Valores que nos definen</h2>
+    <div class="valores">
+      <div class="valor">
+        <h3>Compromiso</h3>
+        <p>Nos esforzamos por brindar atención personalizada, escuchando las necesidades reales de nuestros clientes y ofreciendo soluciones que se ajusten a sus expectativas. Cada interacción es una oportunidad para construir relaciones duraderas basadas en confianza.</p>
       </div>
-
-      <div class="tarjeta-oferta">
-        <img src="img/3.png" alt="Monitor LED">
-        <h3>Monitor LED 24”</h3>
-        <p class="precio-original">$1150.00</p>
-        <p class="precio-oferta">$1119.99</p>
-        <p class="descripcion">Resolución Full HD, ideal para trabajo y gaming</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
+      <div class="valor">
+        <h3>Calidad</h3>
+        <p>Seleccionamos productos que cumplen con altos estándares técnicos y funcionales. Trabajamos con proveedores confiables y realizamos pruebas rigurosas para garantizar que cada artículo cumpla con lo que promete.</p>
       </div>
-
-      <div class="tarjeta-oferta">
-        <img src="img/4.jpg" alt="Teclado Mecánico">
-        <h3>Teclado Mecánico RGB</h3>
-        <p class="precio-original">$89.00</p>
-        <p class="precio-oferta">$69.99</p>
-        <p class="descripcion">Switches azules, retroiluminación personalizable</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
+      <div class="valor">
+        <h3>Accesibilidad</h3>
+        <p>Creemos firmemente que la tecnología debe estar al alcance de todos. Por eso, ofrecemos opciones para distintos presupuestos, métodos de pago flexibles y asesoría gratuita para que nadie se quede atrás en esta era digital.</p>
       </div>
-
-      <div class="tarjeta-oferta">
-        <img src="img/5.jpg" alt="Audífonos Gamer">
-        <h3>Audífonos Gamer HyperX</h3>
-        <p class="precio-original">$79.00</p>
-        <p class="precio-oferta">$59.99</p>
-        <p class="descripcion">Sonido envolvente, micrófono con cancelación</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
+      <div class="valor">
+        <h3>innovación</h3>
+        <p>Nos mantenemos actualizados con las últimas tendencias del mercado, incorporando constantemente nuevos productos, herramientas y servicios que respondan a las necesidades cambiantes de nuestros usuarios.</p>
       </div>
-
-      <div class="tarjeta-oferta">
-        <img src="img/6.jpg" alt="Webcam HD">
-        <h3>Webcam HD 1080p</h3>
-        <p class="precio-original">$49.00</p>
-        <p class="precio-oferta">$34.99</p>
-        <p class="descripcion">Ideal para videollamadas y streaming</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
+      <div class="valor">
+        <h3>Cercania</h3>
+        <p>Más allá de vender tecnología, queremos ser aliados de nuestros clientes. Nuestro equipo está disponible para orientar, resolver dudas y acompañar en cada paso del proceso de compra.</p>
       </div>
-
-      <div class="tarjeta-oferta">
-        <img src="img/7.webp" alt="Audífonos Gamer">
-        <h3>Audifonos Inalambricos</h3>
-        <p class="precio-original">$90.00</p>
-        <p class="precio-oferta">$79.99</p>
-        <p class="descripcion">sonido nítido, conexión estable y llamadas con total libertad</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
-      
-      <div class="tarjeta-oferta">
-        <img src="img/8.avif" alt="Webcam HD">
-        <h3>Deskpots workstations</h3>
-        <p class="precio-original">$120.00</p>
-        <p class="precio-oferta">$95.99</p>
-        <p class="descripcion">Workstation de escritorio potente y confiable, diseñada para tareas exigentes con alto rendimiento</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
-
     </div>
   </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="conteiner">
             <div class="row">
@@ -186,7 +139,6 @@
             </div>
         </div>
     </footer>
-
+<script src="js/sobrenosotros.js"></script>
 </body>
-<script src="js/index.js"></script>
 </html>
