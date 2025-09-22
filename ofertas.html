@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toj Tech - Ofertas</title>
   <link rel="stylesheet" href="css/navegacion.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/logo-proyectofinal2.0.svg">
+  <link rel="stylesheet" href="css/oferta.css">
 </head>
 <body>
 
-    <header>
-        <!-- Barra superior -->
+  <header>
         <div class="hearder_superio">
             <div class="logo">
                 <a href="index.html">
@@ -31,13 +29,11 @@
                 </div>
             </div>
 
-            <!-- Icono hamburguesa (solo visible en móvil) -->
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="menu-toggle">
                 <img src="img/barra-de-menus.png" alt="Menú" class="hamburger-icon">
             </div>
         </div>
 
-        <!-- Menú de navegación -->
         <div class="contarner_menu">
             <div class="menu">
                 <nav>
@@ -49,12 +45,13 @@
                                 <li><a href="componentes.html">Componentes</a></li>
                                 <li><a href="Infor.html">Información</a></li>
                                 <li><a href="acessorios.html">Accesorios</a></li>
-                                <li><a href="deskstops.html">Desktops</a></li>
+                                <li><a href="deskpots.html">Desktops</a></li>
                                 <li><a href="Laptops.html">Laptops</a></li>
                             </ul>
                         </li>
                         <li><a href="ofertas.html">Ofertas</a></li>
                         <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+
 
                         <li class="cart-icon">
                             <div class="Inicio_Seccion">
@@ -70,83 +67,83 @@
     </header>
 
   <section class="ofertas">
-    <h2>🔥 Ofertas Especiales</h2>
-    <div class="contenedor-tarjetas">
+  <h2>🔥 Ofertas Especiales</h2>
+  <div class="contenedor-tarjetas">
 
-      <div class="tarjeta-oferta">
-        <img src="img/1.webp" alt="Laptop Gamer">
-        <h3>Laptop Gamer Ryzen 7</h3>
-        <p class="precio-original">$1200.00</p>
-        <p class="precio-oferta">$999.99</p>
-        <p class="descripcion">16GB RAM, RTX 3060, SSD 512GB</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
+    <a href="laptopgamer.html" class="tarjeta-oferta">
+      <img src="img/1.webp" alt="Laptop Gamer">
+      <h3>Laptop Gamer Ryzen 7</h3>
+      <p class="precio-original">$1200.00</p>
+      <p class="precio-oferta">$999.99</p>
+      <p class="descripcion">16GB RAM, RTX 3060, SSD 512GB</p>
+      <button onclick="mostrarAlerta()">Comprar ahora</button>
+    </a>
 
-      <div class="tarjeta-oferta">
-        <img src="img/2.jpg" alt="Mouse Logitech">
-        <h3>Mouse Inalámbrico Logitech</h3>
-        <p class="precio-original">$35.00</p>
-        <p class="precio-oferta">$24.99</p>
-        <p class="descripcion">Ergonómico, batería de larga duración</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
+    <a href="mouselogitech.html" class="tarjeta-oferta">
+      <img src="img/2.jpg" alt="Mouse Logitech">
+      <h3>Mouse Inalámbrico Logitech</h3>
+      <p class="precio-original">$35.00</p>
+      <p class="precio-oferta">$24.99</p>
+      <p class="descripcion">Ergonómico, batería de larga duración</p>
+      <button onclick="mostrarAlerta()">Comprar ahora</button>
+    </a>
 
-      <div class="tarjeta-oferta">
-        <img src="img/3.png" alt="Monitor LED">
-        <h3>Monitor LED 24”</h3>
-        <p class="precio-original">$1150.00</p>
-        <p class="precio-oferta">$1119.99</p>
-        <p class="descripcion">Resolución Full HD, ideal para trabajo y gaming</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
+    <a href="monitorled.html" class="tarjeta-oferta">
+      <img src="img/3.png" alt="Monitor LED">
+      <h3>Monitor LED 24”</h3>
+      <p class="precio-original">$1150.00</p>
+      <p class="precio-oferta">$1119.99</p>
+      <p class="descripcion">Resolución Full HD, ideal para trabajo y gaming</p>
+      <button onclick="mostrarAlerta()">Comprar ahora</button>
+    </a>
 
-      <div class="tarjeta-oferta">
-        <img src="img/4.jpg" alt="Teclado Mecánico">
-        <h3>Teclado Mecánico RGB</h3>
-        <p class="precio-original">$89.00</p>
-        <p class="precio-oferta">$69.99</p>
-        <p class="descripcion">Switches azules, retroiluminación personalizable</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
+    <a href="tecladomecanico.html" class="tarjeta-oferta">
+      <img src="img/4.jpg" alt="Teclado Mecánico">
+      <h3>Teclado Mecánico RGB</h3>
+      <p class="precio-original">$89.00</p>
+      <p class="precio-oferta">$69.99</p>
+      <p class="descripcion">Switches azules, retroiluminación personalizable</p>
+      <button onclick="mostrarAlerta()">Comprar ahora</button>
+    </a>
 
-      <div class="tarjeta-oferta">
-        <img src="img/5.jpg" alt="Audífonos Gamer">
-        <h3>Audífonos Gamer HyperX</h3>
-        <p class="precio-original">$79.00</p>
-        <p class="precio-oferta">$59.99</p>
-        <p class="descripcion">Sonido envolvente, micrófono con cancelación</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
+    <a href="audifonosgamer.html" class="tarjeta-oferta">
+      <img src="img/5.jpg" alt="Audífonos Gamer">
+      <h3>Audífonos Gamer HyperX</h3>
+      <p class="precio-original">$79.00</p>
+      <p class="precio-oferta">$59.99</p>
+      <p class="descripcion">Sonido envolvente, micrófono con cancelación</p>
+      <button onclick="mostrarAlerta()">Comprar ahora</button>
+    </a>
 
-      <div class="tarjeta-oferta">
-        <img src="img/6.jpg" alt="Webcam HD">
-        <h3>Webcam HD 1080p</h3>
-        <p class="precio-original">$49.00</p>
-        <p class="precio-oferta">$34.99</p>
-        <p class="descripcion">Ideal para videollamadas y streaming</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
+    <a href="wedcam.html" class="tarjeta-oferta">
+      <img src="img/6.jpg" alt="Webcam HD">
+      <h3>Webcam HD 1080p</h3>
+      <p class="precio-original">$49.00</p>
+      <p class="precio-oferta">$34.99</p>
+      <p class="descripcion">Ideal para videollamadas y streaming</p>
+      <button onclick="mostrarAlerta()">Comprar ahora</button>
+    </a>
 
-      <div class="tarjeta-oferta">
-        <img src="img/7.webp" alt="Audífonos Gamer">
-        <h3>Audifonos Inalambricos</h3>
-        <p class="precio-original">$90.00</p>
-        <p class="precio-oferta">$79.99</p>
-        <p class="descripcion">sonido nítido, conexión estable y llamadas con total libertad</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
-      
-      <div class="tarjeta-oferta">
-        <img src="img/8.avif" alt="Webcam HD">
-        <h3>Deskpots workstations</h3>
-        <p class="precio-original">$120.00</p>
-        <p class="precio-oferta">$95.99</p>
-        <p class="descripcion">Workstation de escritorio potente y confiable, diseñada para tareas exigentes con alto rendimiento</p>
-        <a href="compras.html" ><button onclick="mostrarAlerta()">Comprar ahora</button></a>
-      </div>
+    <a href="audifonosinalambricos.html" class="tarjeta-oferta">
+      <img src="img/7.webp" alt="Audifonos Inalambricos">
+      <h3>Audifonos Inalambricos</h3>
+      <p class="precio-original">$90.00</p>
+      <p class="precio-oferta">$79.99</p>
+      <p class="descripcion">Sonido nítido, conexión estable y llamadas con total libertad</p>
+      <button onclick="mostrarAlerta()">Comprar ahora</button>
+    </a>
 
-    </div>
-  </section>
+    <a href="deskpots.html" class="tarjeta-oferta">
+      <img src="img/8.avif" alt="Deskpots workstations">
+      <h3>Deskpots workstations</h3>
+      <p class="precio-original">$120.00</p>
+      <p class="precio-oferta">$95.99</p>
+      <p class="descripcion">Workstation de escritorio potente y confiable, diseñada para tareas exigentes con alto rendimiento</p>
+      <button onclick="mostrarAlerta()">Comprar ahora</button>
+    </a>
+
+  </div>
+</section>
 
     <footer class="footer">
         <div class="conteiner">
@@ -186,6 +183,6 @@
         </div>
     </footer>
 
+  <script src="js/index.js"></script>
 </body>
-<script src="js/index.js"></script>
 </html>

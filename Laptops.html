@@ -7,68 +7,65 @@
   <link rel="stylesheet" href="css/navegacion.css">
   <link rel="stylesheet" href="css/catalogo.css">
   <link rel="stylesheet" href="css/laptops.css">
-  <link rel="Icon" href="img/logo-proyectofinal2.0.svg">
 </head>
 <body>
 
-    <header>
-        <!-- Barra superior -->
-        <div class="hearder_superio">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo-proyectofinal2.0.svg" alt="Logo">
-                </a>
-            </div>
+  <header>
+    <div class="hearder_superio">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo-proyectofinal2.0.svg" alt="Logo">
+        </a>
+      </div>
+      <div class="search">
+        <input type="search" placeholder="¿Qué deseas buscar?">
+      </div>
+      <div class="Inicio_Seccion">
+        <div class="social-media">
+          <a href="Sesion.html">
+            <img src="img/acceso.png" alt="Icono">
+          </a>
+        </div>
+      </div>
 
-            <div class="search">
-                <input type="search" placeholder="¿Qué deseas buscar?">
-            </div>
-
-            <div class="Inicio_Seccion">
-                <div class="social-media">
-                    <a href="Sesion.html">
-                        <img src="img/acceso.png" alt="Icono">
-                    </a>
-                </div>
-            </div>
-
-            <!-- Icono hamburguesa (solo visible en móvil) -->
+      <!-- Icono hamburguesa (solo visible en móvil) -->
             <div class="menu-toggle">
                 <img src="img/barra-de-menus.png" alt="Menú" class="hamburger-icon">
             </div>
-        </div>
+    </div>
 
-        <!-- Menú de navegación -->
-        <div class="contarner_menu">
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html" id="selected">Inicio</a></li>
-                        <li>
-                            <a href="catalogo.html">Catálogo</a>
-                            <ul>
-                                <li><a href="componentes.html">Componentes</a></li>
-                                <li><a href="Infor.html">Información</a></li>
-                                <li><a href="acessorios.html">Accesorios</a></li>
-                                <li><a href="deskstops.html">Desktops</a></li>
-                                <li><a href="Laptops.html">Laptops</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="ofertas.html">Ofertas</a></li>
-                        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
-
-                        <li class="cart-icon">
-                            <div class="Inicio_Seccion">
-                                <div class="social">
-                                    <a href="compras.html"><img src="img/carrito-de-compras.png" alt="Icono"></a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <div class="contarner_menu">
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+              <a href="catalogo.html">Catálogo</a>
+              <ul>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="Infor.html">Informacion</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="desktops.html">Desktops</a></li>
+                <li><a href="laptops.html">Laptops</a></li>
+              </ul>
+            </li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+            <li class="cart-icon">
+              <div class="Inicio_Seccion">
+                <div class="social">
+                  <a href="compras.html">
+                    <img src="img/carrito-de-compras.png" alt="Carrito">
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+  </header>
 
   <section class="hero">
     <div class="hero-texto">
@@ -80,206 +77,205 @@
       <img src="img/laptop ultra.jpg" alt="Laptop" loading="lazy">
     </div>
   </section>
+
   <section class="categorias">
     <h2>Catálogo de Laptops</h2>
     <div class="laptops-grid">
 
+      
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop gamer.png" alt="Laptop Gamer">
-              <h3>Laptop Gamer</h3>
-              <p>$1200</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Procesador Intel i7, 16GB RAM, RTX 3060, 512GB SSD</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-gamer.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop gamer.png" alt="Laptop Gamer">
+                <h3>Laptop Gamer</h3>
+                <p>$1200</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Procesador Intel i7, 16GB RAM, RTX 3060, 512GB SSD</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
+      
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop office.webp" alt="Laptop Oficina">
-              <h3>Laptop Office</h3>
-              <p>$800</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Procesador Intel i5, 8GB RAM, 256GB SSD, ligera y compacta</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-ofice.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop office.png" alt="Laptop Oficina">
+                <h3>Laptop Office</h3>
+                <p>$800</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Procesador Intel i5, 8GB RAM, 256GB SSD, ligera y compacta</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
+      
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop gamer.png" alt="Laptop Pro">
-              <h3>Laptop Pro</h3>
-              <p>$1500</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel i7, 32GB RAM, 1TB SSD, pantalla 4K, ideal para diseño</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-pro.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop gamer.png" alt="Laptop Pro">
+                <h3>Laptop Pro</h3>
+                <p>$1500</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Intel i7, 32GB RAM, 1TB SSD, pantalla 4K, ideal para diseño</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
+      
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop ultra.jpg" alt="Laptop Ultra">
-              <h3>Laptop Ultra</h3>
-              <p>$1800</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel i9, 32GB RAM, RTX 3070, 1TB SSD, gaming extremo</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-ultra.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop ultra.png" alt="Laptop Ultra">
+                <h3>Laptop Ultra</h3>
+                <p>$1800</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Intel i9, 32GB RAM, RTX 3070, 1TB SSD, gaming extremo</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
+      
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop gamer.png" alt="Laptop Estudio">
-              <h3>Laptop Estudio</h3>
-              <p>$1100</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel i5, 16GB RAM, 512GB SSD, ideal para estudiantes y oficina</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-estudio.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop gamer.png" alt="Laptop Estudio">
+                <h3>Laptop Estudio</h3>
+                <p>$1100</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Intel i5, 16GB RAM, 512GB SSD, ideal para estudiantes y oficina</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
+      
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop office.webp" alt="Laptop Compacta">
-              <h3>Laptop Compacta</h3>
-              <p>$950</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel i3, 8GB RAM, 256GB SSD, ligera y portátil</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-compacta.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop office.png" alt="Laptop Compacta">
+                <h3>Laptop Compacta</h3>
+                <p>$950</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Intel i3, 8GB RAM, 256GB SSD, ligera y portátil</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
+      
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop ultra.jpg" alt="Laptop Gaming Plus">
-              <h3>Laptop Gaming Plus</h3>
-              <p>$2000</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel i9, 32GB RAM, RTX 3080, 1TB SSD, pantalla 144Hz</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-gaming-plus.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop gamer.png" alt="Laptop Gaming Plus">
+                <h3>Laptop Gaming Plus</h3>
+                <p>$2000</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Intel i9, 32GB RAM, RTX 3080, 1TB SSD, pantalla 144Hz</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
+     
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop office.webp" alt="Laptop Creator">
-              <h3>Laptop Creator</h3>
-              <p>$1700</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel i7, 32GB RAM, RTX 3060, perfecta para diseño y edición</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-creator.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop gamer.png" alt="Laptop Creator">
+                <h3>Laptop Creator</h3>
+                <p>$1700</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Intel i7, 32GB RAM, RTX 3060, perfecta para diseño y edición</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
+      
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop ultra.jpg" alt="Laptop Premium">
-              <h3>Laptop Premium</h3>
-              <p>$2200</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel i9, 64GB RAM, RTX 3090, 2TB SSD, rendimiento extremo</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-premium.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop ultra.png" alt="Laptop Premium">
+                <h3>Laptop Premium</h3>
+                <p>$2200</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Intel i9, 64GB RAM, RTX 3090, 2TB SSD, rendimiento extremo</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
+      
       <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop office.webp" alt="Laptop Workstation">
-              <h3>Laptop Workstation</h3>
-              <p>$2500</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel Xeon, 64GB RAM, Quadro RTX 4000, 2TB SSD, estaciones profesionales</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-            <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop gamer.png" alt="Laptop Pro">
-              <h3>Laptop Pro</h3>
-              <p>$1500</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel i7, 32GB RAM, 1TB SSD, pantalla 4K, ideal para diseño</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
+        <a href="laptop-worestation.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/laptop ultra.png" alt="Laptop Workstation">
+                <h3>Laptop Workstation</h3>
+                <p>$2500</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Intel Xeon, 64GB RAM, Quadro RTX 4000, 2TB SSD, estaciones profesionales</p>
+                <button class="agregar">Añadir al carrito</button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-            <div class="laptop-item">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/laptop gamer.png" alt="Laptop Pro">
-              <h3>Laptop Pro</h3>
-              <p>$1500</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Intel i7, 32GB RAM, 1TB SSD, pantalla 4K, ideal para diseño</p>
-              <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
 
     </div>
   </section>
 
-  <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="conteiner">
             <div class="row">
@@ -317,7 +313,7 @@
             </div>
         </div>
     </footer>
-
   <script src="js/index.js"></script>
+  <script src="js/app2.js"></script>
 </body>
 </html>

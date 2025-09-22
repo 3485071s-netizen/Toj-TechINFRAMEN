@@ -4,13 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TOJ TECH - Catálogo de Tecnología</title>
-
-  <meta name="description" content="TOJ TECH: Laptops, componentes, accesorios y artículos informáticos al mejor precio.">
-  <meta name="keywords" content="laptops, tecnología, componentes, computadoras, accesorios, informática">
-  <meta name="author" content="TOJ TECH">
   <link rel="stylesheet" href="css/navegacion.css">
   <link rel="stylesheet" href="css/catalogo.css">
-  <link rel="icon" href="img/logo-proyectofinal2.0.svg">
 </head>
 <body>
 
@@ -36,7 +31,7 @@
             </div>
 
             <!-- Icono hamburguesa (solo visible en móvil) -->
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="menu-toggle">
                 <img src="img/barra-de-menus.png" alt="Menú" class="hamburger-icon">
             </div>
         </div>
@@ -73,19 +68,17 @@
         </div>
     </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-texto">
       <h2>Las mejores laptops y artículos informáticos al mejor precio</h2>
       <p>Somos los mejores en material informático.</p>
-      <button>Comprar nuevo</button>
+      <button>comprar nuevo</button>
     </div>
     <div class="hero-imagen">
-      <img src="img/placa base atx.jpg" alt="Placa base informática" loading="lazy">
+      <img src="img/placa base atx.png" alt="Placa base informática" loading="lazy">
     </div>
   </section>
 
-  <!-- BUSCADOR -->
   <section class="buscador">
     <h2>Busca tu producto</h2>
     <input type="text" id="buscarInput" placeholder="Buscar producto">
@@ -99,129 +92,277 @@
     <input type="number" id="filtroPrecio" placeholder="Precio máximo">
   </section>
 
-  <!-- CATEGORÍAS / PRODUCTOS -->
-  <section class="categorias" id="productos">
-    <h2>Catálogo</h2>
+<section class="categorias" id="productos">
+  <h2>Catálogo</h2>
 
-    <!-- COMPONENTES -->
-    <div id="componentes" class="sub-categoria">
-      <h3>Componentes</h3>
-      <div class="grid">
-        <div class="item" data-categoria="componente" data-precio="300">
+  <div id="componentes" class="sub-categoria">
+    <h3>Componentes</h3>
+    <div class="grid">
+      <div class="item" data-categoria="componente" data-precio="300">
+        <a href="memoria.html" target="_blank">
           <img src="img/memoria ran 16 gb.png" alt="Memoria RAM" loading="lazy">
-          <p>Memoria RAM 16GB - $300</p>
-          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
-        </div>
-        <div class="item" data-categoria="componente" data-precio="450">
-          <img src="img/disco ssd 1 tb.jpg" alt="Disco SSD" loading="lazy">
-          <p>Disco SSD 1TB - $450</p>
-          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
-        </div>
-        <div class="item" data-categoria="componente" data-precio="250">
-          <img src="img/placa base atx.jpg" alt="Placa Base ATX" loading="lazy">
-          <p>Placa Base ATX - $250</p>
-          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
-        </div>
-        <!-- Resto de componentes omitidos por brevedad -->
+        </a>
+        <p>Memoria RAM 16GB - $300</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="450">
+        <a href="disco-sccd.html" target="_blank">
+          <img src="img/disco ssd 1 tb.png" alt="Disco SSD" loading="lazy">
+        </a>
+        <p>Disco SSD 1TB - $450</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="250">
+        <a href="placa-base-atx.html" target="_blank">
+          <img src="img/placa base atx.png" alt="Placa Base ATX" loading="lazy">
+        </a>
+        <p>Placa Base ATX - $250</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="350">
+        <a href="prosesador-inteli7.html" target="_blank">
+          <img src="img/procesador intel i7.png" alt="Procesador Intel i7" loading="lazy">
+        </a>
+        <p>Procesador Intel i7 - $350</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="400">
+        <a href="tarjeta-grafia3020.html" target="_blank">
+          <img src="img/tarjeta grafica rtx 3060.png" alt="Tarjeta Gráfica RTX 3060" loading="lazy">
+        </a>
+        <p>Tarjeta Gráfica RTX 3060 - $400</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="60">
+        <a href="tarjeta-sonido.html" target="_blank">
+          <img src="img/tarjeta de sonido 7.1.png" alt="Tarjeta de Sonido" loading="lazy">
+        </a>
+        <p>Tarjeta de Sonido 7.1 - $60</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="45">
+        <a href="dicipador.html" target="_blank">
+          <img src="img/disiparador cpu tarjeta de red.png" alt="Disipador CPU" loading="lazy">
+        </a>
+        <p>Disipador CPU - $45</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="35">
+        <a href="tarjeta-red.html" target="_blank">
+          <img src="img/tarjeta grafica rtx 3060.png" alt="Tarjeta de Red" loading="lazy">
+        </a>
+        <p>Tarjeta de Red Gigabit - $35</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="95">
+        <a href="office-gamer.html" target="_blank">
+          <img src="img/office gamer.png" alt="Fuente de Poder" loading="lazy">
+        </a>
+        <p>Fuente de Poder 650W - $95</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="70">
+        <a href="cooler-rgb-70.html" target="_blank">
+          <img src="img/cooler rgb gabinete atx.png" alt="Cooler RGB" loading="lazy">
+        </a>
+        <p>Cooler RGB - $70</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="40">
+        <a href="gabinete.html" target="_blank">
+          <img src="img/gabinete atx.png" alt="Gabinete ATX" loading="lazy">
+        </a>
+        <p>Gabinete ATX - $40</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="componente" data-precio="55">
+        <a href="kit-cables.html" target="_blank">
+          <img src="img/kit de cables para pc.png" alt="Kit de Cables" loading="lazy">
+        </a>
+        <p>Kit de Cables para PC - $55</p>
+        <button class="agregar">Añadir al carrito</button>
       </div>
     </div>
+  </div>
 
-    <!-- DISPOSITIVOS -->
-    <div id="dispositivos" class="sub-categoria">
-      <h3>Dispositivos</h3>
-      <div class="grid">
-        <div class="item" data-categoria="dispositivo" data-precio="600">
-          <img src="img/WhatsApp Image 2025-09-11 at 9.02.06 PM (1).jpeg" alt="Tablet" loading="lazy">
-          <p>Tablet Pro - $600</p>
-          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
-        </div>
-        <!-- Resto de dispositivos omitidos por brevedad -->
+  <div id="dispositivos" class="sub-categoria">
+    <h3>Dispositivos</h3>
+    <div class="grid">
+      <div class="item" data-categoria="dispositivo" data-precio="600">
+        <a href="tablet.html" target="_blank">
+          <img src="img/tablet pro.png" alt="Tablet" loading="lazy">
+        </a>
+        <p>Tablet Pro - $600</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="dispositivo" data-precio="350">
+        <a href="smartwatcs.html" target="_blank">
+          <img src="img/smartwatch serie 5.png" alt="Smartwatch" loading="lazy">
+        </a>
+        <p>Smartwatch Series 5 - $350</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="dispositivo" data-precio="200">
+        <a href="auriculares.html" target="_blank">
+          <img src="img/auriculares gamer.png" alt="Auriculares" loading="lazy">
+        </a>
+        <p>Auriculares Inalámbricos - $200</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="dispositivo" data-precio="450">
+        <a href="camar-full-hd.html" target="_blank">
+          <img src="img/camara wed.webp" alt="Cámara Web" loading="lazy">
+        </a>
+        <p>Cámara Web Full HD - $450</p>
+        <button class="agregar">Añadir al carrito</button>
       </div>
     </div>
+  </div>
 
-    <!-- ACCESORIOS -->
-    <div id="accesorios" class="sub-categoria">
-      <h3>Accesorios</h3>
-      <div class="grid">
-        <div class="item" data-categoria="accesorio" data-precio="50">
-          <img src="img/WhatsApp Image 2025-09-11 at 9.02.06 PM.jpeg" alt="Mouse óptico" loading="lazy">
-          <p>Mouse óptico - $50</p>
-          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
-        </div>
-        <!-- Resto de accesorios omitidos por brevedad -->
+  <div id="accesorios" class="sub-categoria">
+    <h3>Accesorios</h3>
+    <div class="grid">
+      <div class="item" data-categoria="accesorio" data-precio="50">
+        <a href="mause-optico.html" target="_blank">
+          <img src="img/mouse optico.png" alt="Mouse óptico" loading="lazy">
+        </a>
+        <p>Mouse óptico - $50</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="accesorio" data-precio="80">
+        <a href="teclado-mecanico.html" target="_blank">
+          <img src="img/teclado mecanico.png" alt="Teclado mecánico" loading="lazy">
+        </a>
+        <p>Teclado mecánico - $80</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="accesorio" data-precio="25">
+        <a href="mause-pad-gamer.html" target="_blank">
+          <img src="img/mouse optico.png" alt="Mousepad" loading="lazy">
+        </a>
+        <p>Mousepad Gamer - $25</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="accesorio" data-precio="120">
+        <a href="auriculares-gamer.html" target="_blank">
+          <img src="img/auriculares gamer.png" alt="Auriculares Gamer" loading="lazy">
+        </a>
+        <p>Auriculares Gamer RGB - $120</p>
+        <button class="agregar">Añadir al carrito</button>
       </div>
     </div>
+  </div>
 
-    <!-- DESKTOPS -->
-    <div id="desktops" class="sub-categoria">
-      <h3>Desktops</h3>
-      <div class="grid">
-        <div class="item" data-categoria="desktop" data-precio="1200">
-          <img src="img/deskpots gamer.jpg" alt="Desktop Gamer" loading="lazy">
-          <p>Desktop Gamer - $1200</p>
-          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
-        </div>
-        <!-- Resto de desktops omitidos por brevedad -->
+  <div id="desktops" class="sub-categoria">
+    <h3>Desktops</h3>
+    <div class="grid">
+      <div class="item" data-categoria="desktop" data-precio="1200">
+        <a href="desktop-office.html" target="_blank">
+          <img src="img/deskpots gamer.png" alt="Desktop Gamer" loading="lazy">
+        </a>
+        <p>Desktop Gamer - $1200</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="desktop" data-precio="900">
+        <a href="dsktop.office.html" target="_blank">
+          <img src="img/deskpots workstations.png" alt="Desktop Office" loading="lazy">
+        </a>
+        <p>Desktop Office - $900</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="desktop" data-precio="1100">
+        <a href="desktop-media-center.html" target="_blank">
+          <img src="img/deskpots workstations.png" alt="Desktop Media" loading="lazy">
+        </a>
+        <p>Desktop Media Center - $1100</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="desktop" data-precio="1500">
+        <a href="desktop-gaming-pro.html" target="_blank">
+          <img src="img/dexter gaming pro.png" alt="Desktop Gaming Pro" loading="lazy">
+        </a>
+        <p>Desktop Gaming Pro - $1500</p>
+        <button class="agregar">Añadir al carrito</button>
       </div>
     </div>
+  </div>
 
-    <!-- LAPTOPS -->
-    <div id="laptops" class="sub-categoria">
-      <h3>Laptops</h3>
-      <div class="grid">
-        <div class="item" data-categoria="laptop" data-precio="750">
-          <img src="img/laptop office.webp" alt="Laptop básica" loading="lazy">
-          <p>Laptop básica - $750</p>
-          <a href="compras.html"><button class="agregar">Añadir al carrito</button></a>
-        </div>
-        <!-- Resto de laptops omitidos por brevedad -->
+  <div id="laptops" class="sub-categoria">
+    <h3>Laptops</h3>
+    <div class="grid">
+      <div class="item" data-categoria="laptop" data-precio="750">
+        <a href="laptop-basica.html" target="_blank">
+          <img src="img/laptop office.png" alt="Laptop básica" loading="lazy">
+        </a>
+        <p>Laptop básica - $750</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="laptop" data-precio="1200">
+        <a href="laptop-gamer.html" target="_blank">
+          <img src="img/laptop gamer.png" alt="Laptop Gamer" loading="lazy">
+        </a>
+        <p>Laptop Gamer - $1200</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="laptop" data-precio="950">
+        <a href="laptop-ultra.html" target="_blank">
+          <img src="img/laptop ultra.png" alt="Laptop UltraBook" loading="lazy">
+        </a>
+        <p>Laptop UltraBook - $950</p>
+        <button class="agregar">Añadir al carrito</button>
+      </div>
+      <div class="item" data-categoria="laptop" data-precio="1600">
+        <a href="laptop-gaming-pro.html" target="_blank">
+          <img src="img/laptop gamer.png" alt="Laptop Gaming Pro" loading="lazy">
+        </a>
+        <p>Laptop Gaming Pro - $1600</p>
+        <button class="agregar">Añadir al carrito</button>
       </div>
     </div>
+  </div>
+</section>
 
-  </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="conteiner">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Información de Contacto</h4>
+                    <ul>
+                        <li><a href="#">Contacto : 0000-0000</a></li>
+                    </ul>
+                </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="conteiner">
-      <div class="row">
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-media">
+                        <a href=""><img src="img/logotipo-de-instagram (1).png" alt="Instagram"></a>
+                        <a href=""><img src="img/tik-tok.png" alt="Tik Tok"></a>
+                        <a href=""><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href=""><img src="img/logotipos.png" alt="Twitter"></a>
+                    </div>
+                </div>
 
-        <div class="footer-col">
-          <h4>Información de Contacto</h4>
-          <ul>
-            <li><a href="#">Contacto: 0000-0000</a></li>
-          </ul>
+                <div class="footer-col">
+                    <h4>Políticas y Términos</h4>
+                    <ul>
+                        <li><a href="Termino.html">Aviso de Privacidad</a></li>
+                        <li><a href="Termino.html">Términos de Uso</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <ul>
+                        <li><a href="Infor.html">San Salvador, El Salvador</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </footer>
 
-        <div class="footer-col">
-          <h4>Redes Sociales</h4>
-          <div class="social-media">
-            <a href="#"><img src="img/logotipo-de-instagram (1).png" alt="Instagram"></a>
-            <a href="#"><img src="img/tik-tok.png" alt="Tik Tok"></a>
-            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="img/logotipos.png" alt="Facebook"></a>
-          </div>
-        </div>
 
-        <div class="footer-col">
-          <h4>Políticas y Términos</h4>
-          <ul>
-            <li><a href="Termino.html">Aviso de Privacidad</a></li>
-            <li><a href="Termino.html">Términos de Uso</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Ubicación</h4>
-          <ul>
-            <li><a href="Infor.html">San Salvador, El Salvador</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/catalogo+.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/app2.js"></script>
 </body>
 </html>
-
