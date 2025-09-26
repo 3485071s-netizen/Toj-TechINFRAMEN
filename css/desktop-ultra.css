@@ -95,11 +95,37 @@ table tr:nth-child(even) td {
   background-color: #4d4d4d;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    margin: 50px auto;
+    padding: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .producto-info {
     flex-direction: column;
   }
   .descripcion, .especificaciones {
     flex: 1 1 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .producto-imagen img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  table th, table td {
+    font-size: 0.9rem;
+    padding: 8px;
   }
 }
