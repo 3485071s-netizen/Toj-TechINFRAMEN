@@ -36,11 +36,10 @@ h1 {
 }
 
 .producto-imagen img {
-  width: 1000px;
+  width: 100%;
   border-radius: 8px;
   object-fit: cover;  
   margin-bottom: 10px;
-  
 }
 
 .producto-info {
