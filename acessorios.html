@@ -9,59 +9,58 @@
 </head>
 <body>
 
-    <header>
-        <!-- Barra superior -->
-        <div class="hearder_superio">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo-proyectofinal2.0.svg" alt="Logo">
-                </a>
-            </div>
-
-            <div class="user-icons">
-                <a href="Sesion.html" class="social-media">
-                    <img src="img/acceso.png" alt="Icono Sesión">
-                </a>
-             <a href="compras.html" class="social-media">
-                <img src="img/carrito-de-compras.png" alt="Icono Carrito">
-                 </a>
-            </div>  
-
-
-            <!-- Icono hamburguesa (solo visible en móvil) -->
-            <div class="menu-toggle">
-                <img src="img/barra-de-menus.png" alt="Menú" class="hamburger-icon">
-            </div>
+<header>
+    <!-- Barra superior -->
+    <div class="hearder_superio">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-proyectofinal2.0.svg" alt="Logo">
+            </a>
         </div>
 
-        <!-- Menú de navegación -->
-        <div class="contarner_menu">
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html" id="selected">Inicio</a></li>
-                        <li>
-                            <a href="catalogo.html">Catálogo</a>
-                            <ul>
-                                <li><a href="componentes.html">Componentes</a></li>
-                                <li><a href="Infor.html">Información</a></li>
-                                <li><a href="acessorios.html">Accesorios</a></li>
-                                <li><a href="deskstops.html">Desktops</a></li>
-                                <li><a href="Laptops.html">Laptops</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="ofertas.html">Ofertas</a></li>
-                        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
-
-
-                        <div class="search">
-                            <input type="search" placeholder="¿Qué deseas buscar?">
-                        </div>
-                    </ul>
-                </nav>
-            </div>
+        <!-- Íconos de sesión y carrito en línea -->
+        <div class="user-cart">
+            <a href="Sesion.html" class="icon">
+                <img src="img/acceso.png" alt="Iniciar sesión">
+            </a>
+            <a href="compras.html" class="icon">
+                <img src="img/carrito-de-compras.png" alt="Carrito">
+            </a>
         </div>
-    </header>
+
+        <!-- Icono hamburguesa (solo visible en móvil) -->
+        <div class="menu-toggle">
+            <img src="img/barra-de-menus.png" alt="Menú" class="hamburger-icon">
+        </div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <div class="contarner_menu">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="selected">Inicio</a></li>
+                    <li>
+                        <a href="catalogo.html">Catálogo</a>
+                        <ul>
+                            <li><a href="componentes.html">Componentes</a></li>
+                            <li><a href="Infor.html">Información</a></li>
+                            <li><a href="acessorios.html">Accesorios</a></li>
+                            <li><a href="deskstops.html">Desktops</a></li>
+                            <li><a href="Laptops.html">Laptops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                </ul>
+                <!-- Barra de búsqueda movida fuera del ul -->
+                <div class="search">
+                    <input type="search" placeholder="¿Qué deseas buscar?">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
 
   
   <section class="hero">
@@ -77,7 +76,7 @@
 
   
   <section class="buscador">
-    <h2>Buscar  tus accesorios</h2>
+    <h2>Buscar tus accesorios</h2>
     <input type="text" id="buscarInput" placeholder="Buscar accesorio">
     <select id="filtroCategoria">
       <option value="">Todas las categorías</option>
@@ -95,104 +94,120 @@
   <div class="sub-categoria">
     <h3>Accesorios</h3>
     <div class="grid">
-      <div class="item" data-categoria="mouse" data-precio="50">
-        <a href="mause.html">
+
+      <a href="mause.html" class="card-link">
+        <div class="item" data-categoria="mouse" data-precio="50">
           <img src="img/mouse optico.png" alt="Mouse profesional" loading="lazy">
-        </a>
-        <p>Mouse Profesional - $50</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Mouse Profesional</h4>
+          <p class="precio">$50</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="teclado" data-precio="80">
-        <a href="teclado-optico.html">
+      <a href="teclado-optico.html" class="card-link">
+        <div class="item" data-categoria="teclado" data-precio="80">
           <img src="img/teclado mecanico.png" alt="Teclado mecánico" loading="lazy">
-        </a>
-        <p>Teclado Mecánico RGB - $80</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Teclado Mecánico RGB</h4>
+          <p class="precio">$80</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="audifonos" data-precio="100">
-        <a href="audifonos.-gaming.html">
+      <a href="audifonos.-gaming.html" class="card-link">
+        <div class="item" data-categoria="audifonos" data-precio="100">
           <img src="img/auriculares gamer.png" alt="Audífonos Gaming" loading="lazy">
-        </a>
-        <p>Audífonos Gaming - $100</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Audífonos Gaming</h4>
+          <p class="precio">$100</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="webcam" data-precio="70">
-        <a href="web-cam.html">
+      <a href="web-cam.html" class="card-link">
+        <div class="item" data-categoria="webcam" data-precio="70">
           <img src="img/wedcam profesional.png" alt="Webcam HD" loading="lazy">
-        </a>
-        <p>Webcam HD 1080p - $70</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Webcam HD 1080p</h4>
+          <p class="precio">$70</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="mouse" data-precio="60">
-        <a href="mause-inalambrico.html">
+      <a href="mause-inalambrico.html" class="card-link">
+        <div class="item" data-categoria="mouse" data-precio="60">
           <img src="img/mouse optico.png" alt="Mouse inalámbrico" loading="lazy">
-        </a>
-        <p>Mouse Inalámbrico - $60</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Mouse Inalámbrico</h4>
+          <p class="precio">$60</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="teclado" data-precio="120">
-        <a href="teclado-profecional.html">
+      <a href="teclado-profecional.html" class="card-link">
+        <div class="item" data-categoria="teclado" data-precio="120">
           <img src="img/teclado mecanico.png" alt="Teclado Profesional" loading="lazy">
-        </a>
-        <p>Teclado Profesional - $120</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Teclado Profesional</h4>
+          <p class="precio">$120</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="audifonos" data-precio="150">
-        <a href="auriculares-inalambricos.html">
+      <a href="auriculares-inalambricos.html" class="card-link">
+        <div class="item" data-categoria="audifonos" data-precio="150">
           <img src="img/auriculares inalambricos.png" alt="Auriculares Inalámbricos" loading="lazy">
-        </a>
-        <p>Auriculares Inalámbricos - $150</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Auriculares Inalámbricos</h4>
+          <p class="precio">$150</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="webcam" data-precio="90">
-        <a href="web-cam-pro.html">
+      <a href="web-cam-pro.html" class="card-link">
+        <div class="item" data-categoria="webcam" data-precio="90">
           <img src="img/wedcam profesional.png" alt="Webcam Profesional" loading="lazy">
-        </a>
-        <p>Webcam Profesional - $90</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Webcam Profesional</h4>
+          <p class="precio">$90</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="mouse" data-precio="75">
-        <a href="mause-gaming.html">
+      <a href="mause-gaming.html" class="card-link">
+        <div class="item" data-categoria="mouse" data-precio="75">
           <img src="img/mouse optico.png" alt="Mouse Gaming RGB" loading="lazy">
-        </a>
-        <p>Mouse Gaming RGB - $75</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Mouse Gaming RGB</h4>
+          <p class="precio">$75</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="teclado" data-precio="95">
-        <a href="teclado-compacto.html">
+      <a href="teclado-compacto.html" class="card-link">
+        <div class="item" data-categoria="teclado" data-precio="95">
           <img src="img/teclado mecanico.png" alt="Teclado Compacto" loading="lazy">
-        </a>
-        <p>Teclado Compacto - $95</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Teclado Compacto</h4>
+          <p class="precio">$95</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="audifonos" data-precio="130">
-        <a href="auriculares-microfono.html">
+      <a href="auriculares-microfono.html" class="card-link">
+        <div class="item" data-categoria="audifonos" data-precio="130">
           <img src="img/auriculares inalambricos.png" alt="Auriculares con Micrófono" loading="lazy">
-        </a>
-        <p>Auriculares con Micrófono - $130</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Auriculares con Micrófono</h4>
+          <p class="precio">$130</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
 
-      <div class="item" data-categoria="webcam" data-precio="110">
-        <a href="web-cam-full.html">
+      <a href="web-cam-full.html" class="card-link">
+        <div class="item" data-categoria="webcam" data-precio="110">
           <img src="img/wedcam profesional.png" alt="Webcam Full HD" loading="lazy">
-        </a>
-        <p>Webcam Full HD - $110</p>
-        <button class="agregar">Añadir al carrito</button>
-      </div>
+          <h4>Webcam Full HD</h4>
+          <p class="precio">$110</p>
+          <button class="agregar">Añadir al carrito</button>
+        </div>
+      </a>
+
     </div>
   </div>
 </section>
+
+
 
 
  <!-- Footer -->

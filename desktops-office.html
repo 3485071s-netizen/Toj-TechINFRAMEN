@@ -3,16 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desktop Office</title>
+  <title>Desktop Office - Detalles</title>
+  <link rel="stylesheet" href="css/navegacion.css">
   <link rel="stylesheet" href="css/desktops-office.css">
 </head>
 <body>
 
-  <header>
-    <h1>Desktop Office</h1>
-  </header>
+<header>
+    <!-- Barra superior -->
+    <div class="hearder_superio">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-proyectofinal2.0.svg" alt="Logo">
+            </a>
+        </div>
 
-  <div class="container">
+        <!-- Íconos de sesión y carrito en línea -->
+        <div class="user-cart">
+            <a href="Sesion.html" class="icon">
+                <img src="img/acceso.png" alt="Iniciar sesión">
+            </a>
+            <a href="compras.html" class="icon">
+                <img src="img/carrito-de-compras.png" alt="Carrito">
+            </a>
+        </div>
+
+        <!-- Icono hamburguesa (solo visible en móvil) -->
+        <div class="menu-toggle">
+            <img src="img/barra-de-menus.png" alt="Menú" class="hamburger-icon">
+        </div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <div class="contarner_menu">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="selected">Inicio</a></li>
+                    <li>
+                        <a href="catalogo.html">Catálogo</a>
+                        <ul>
+                            <li><a href="componentes.html">Componentes</a></li>
+                            <li><a href="Infor.html">Información</a></li>
+                            <li><a href="acessorios.html">Accesorios</a></li>
+                            <li><a href="deskstops.html">Desktops</a></li>
+                            <li><a href="Laptops.html">Laptops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                </ul>
+                <!-- Barra de búsqueda movida fuera del ul -->
+                <div class="search">
+                    <input type="search" placeholder="¿Qué deseas buscar?">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Contenido del producto -->
+<main class="container">
+    <h1>Desktop Office</h1>
+
     <div class="producto-imagen">
       <img src="img/deskpots workstations.png" alt="Desktop Office">
     </div>
@@ -30,18 +83,59 @@
       <div class="especificaciones">
         <h3>Especificaciones Técnicas</h3>
         <table>
-          <tr><th>Procesador</th><td>Intel Core i5 11ª Gen</td></tr>
-          <tr><th>Tarjeta Gráfica</th><td>Intel UHD Graphics</td></tr>
-          <tr><th>RAM</th><td>8GB DDR4</td></tr>
-          <tr><th>Almacenamiento</th><td>512GB SSD</td></tr>
-          <tr><th>Sistema Operativo</th><td>Windows 11 Pro</td></tr>
-          <tr><th>Precio</th><td>$900</td></tr>
+          <tr><td>Procesador</td><td>Intel Core i5 11ª Gen</td></tr>
+          <tr><td>Tarjeta Gráfica</td><td>Intel UHD Graphics</td></tr>
+          <tr><td>RAM</td><td>8GB DDR4</td></tr>
+          <tr><td>Almacenamiento</td><td>512GB SSD</td></tr>
+          <tr><td>Sistema Operativo</td><td>Windows 11 Pro</td></tr>
+          <tr><td>Precio</td><td>$900</td></tr>
         </table>
       </div>
     </div>
 
     <a href="deskstops.html" class="volver">← Volver al Catálogo</a>
-  </div>
+</main>
 
+<!-- Footer uniforme -->
+<footer class="footer">
+    <div class="conteiner">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Información de Contacto</h4>
+                <ul>
+                    <li><a href="#">Contacto : 0000-0000</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Redes Sociales</h4>
+                <div class="social-media">
+                    <a href=""><img src="img/logotipo-de-instagram (1).png" alt="Instagram"></a>
+                    <a href=""><img src="img/tik-tok.png" alt="Tik Tok"></a>
+                    <a href=""><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href=""><img src="img/logotipos.png" alt="Twitter"></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Políticas y Términos</h4>
+                <ul>
+                    <li><a href="Termino.html">Aviso de Privacidad</a></li>
+                    <li><a href="Termino.html">Términos de Uso</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ubicación</h4>
+                <ul>
+                    <li><a href="Infor.html">San Salvador, El Salvador</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+<script src="js/app2.js"></script>
 </body>
 </html>
