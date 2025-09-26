@@ -1,4 +1,4 @@
-/* --- RESETEO Y ESTILOS GENERALES --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,36 +11,44 @@ body {
     background-color: #fff;
 }
 
+.user-cart {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.user-cart .icon img {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.user-cart .icon img:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+.search {
+    margin-left: auto; 
+}
+
+
 .cart-icon {
     margin-left: auto; 
 }
 
 .social-media img {
     width: 40px;
-}
-
-.icono{
-    width: 40px;
-    display: inline-block;
-    height: 40px;
-    background: rgba(0,0,0,0.1);
-    text-align: center;
-    border-radius: 50%;
-    color: #333;
-    transition: 0.3s;
-}
-
-.icono a:hover{
-background: black;
-    color: white;
-}
-
-.icono img{
-    width: 50px;
-}
-
-.iconoCarrito img{
-    width: 30px;
 }
 
 header {
@@ -70,30 +78,11 @@ header {
 }
 
 .search input {
-    margin-left: 100%;
-   width: 300px;
+    width: 300px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-.user-icons {
-    display: flex;
-    align-items: center;
-    gap: 15px; 
-    margin-left: auto; 
-}
-
-.user-icons .icono img {
-    width: 35px;
-    transition: transform 0.2s ease;
-}
-
-.user-icons .icono img:hover {
-    transform: scale(1.1);
-}
-
-
 
 .contarner_menu {
     width: 100%;

@@ -7,7 +7,6 @@ body {
 }
 
 
-
 .container {
   width: 1000px;
   margin: 100px auto;
@@ -16,16 +15,10 @@ body {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   padding-bottom: 30px;
-  transition: transform 0.3s, box-shadow 0.3s; 
-}
-
-.container:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
 }
 
 h1 {
-  color: #003366;
+  color: white;
   margin-top: 20px;
   text-align: center;
 }
@@ -40,7 +33,6 @@ h1 {
   border-radius: 8px;
   object-fit: cover;  
   margin-bottom: 10px;
-  
 }
 
 .producto-info {
@@ -100,7 +92,7 @@ table tr:nth-child(even) td {
 }
 
 .volver:hover {
-  background-color: #333; 
+  background-color: #4d4d4d;
 }
 
 @media (max-width: 768px) {
